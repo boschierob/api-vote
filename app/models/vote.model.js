@@ -1,5 +1,6 @@
 module.exports = mongoose => {
   var voterSchema = mongoose.Schema({ name: 'string' });
+  var questionSchema = mongoose.Schema({ })
   var schema = mongoose.Schema(
     {	
       question: String,

@@ -9,5 +9,7 @@ db.url = dbConfig.url;
 db.occasions = require('./occasion.model.js')(mongoose);
 db.votes = require('./vote.model.js')(mongoose);
 db.results = require('./result.model.js')(mongoose);
+db.users = require('./user.model.js')(mongoose);
+
 
 module.exports = db;

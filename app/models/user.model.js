@@ -1,12 +1,22 @@
 module.exports = mongoose => {
   var schema = mongoose.Schema(
     {	
-      first_name: String,
-      last_name:String,
-      adress: String,
-      postal_code: String,
-      city: String,
-      email:String
+      first_name:{type: String, required: true},
+      last_name:{type: String, required: true},
+      adress: {type: String, required: true},
+      postal_code: {type: String, required: true},
+      city: {type: String, required: true},
+      email:{
+            type: String, 
+            required: true,
+            validate: {
+                        validator: function(v) {
+                        return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(v)
+                        },
+                        message: props => `${props.value} is incorrect email!`
+                      },
+            },
+      password: {type: String, required : true, unique: true}
     },
     { timestamps: true }
   );

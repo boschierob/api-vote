@@ -1,6 +1,12 @@
 
+
+const bcrypt =require('bcrypt');
+const jwt = require('jsonwebtoken');
+
 const db = require('../models');
 const User = db.users;
+const JWT_KEY = require('../config/env.config.js');
+
 
 //Create and Save new User
 exports.create = (req, res) => {
@@ -10,37 +16,68 @@ exports.create = (req, res) => {
     return;
   }
 
-  // Create a User
-  const user = new User({
-  	first_name: req.body.first_name,
-      last_name:req.body.last_name,
-      adress: req.body.adress,
-      postal_code: req.body.postal_code,
-      city: req.body.city,
-      email:req.body.email,
-  });
+  User.find({ email: req.body.email })
+		.exec()
+		.then(user => {
+			if(user.length >=1) {
+				return res.status(409).json({
+					message: 'this email alreday exists in our database'
+				})
+			} else {
 
-  // Save User in the database
-  user
-    .save(user)
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while creating the Occasion."
-      });
-    });
+				bcrypt.hash(req.body.password, 10, (err, hash)=>{
+						if(err) {
+							return res.status(500).json({
+								error: err
+							});
+						} else {
+
+							 // Create a User
+						  	const user = new User({
+						  	first_name: req.body.first_name,
+						    last_name:req.body.last_name,
+						    adress: req.body.adress,
+						    postal_code: req.body.postal_code,
+						    city: req.body.city,
+						    email:req.body.email,
+						    password: hash
+						  });
+
+						  // Save User in the database
+						  user
+						    .save(user)
+						    .then(data => {
+						      res.send(data);
+						    })
+						    .catch(err => {
+						      res.status(500).send({
+						        message:
+						          err.message || "Some error occurred while creating the User."
+						      });
+						    });
+
+
+						}
+
+
+
+				});
+
+				 
+			}
+		});
 };
-//Retrieve all Tutorials
-exports.findAll = (req,res) => {
-	const email = req.query.email;
-	var condition = email ? { email: {$regex: new RegExp(email), $options:"i"}} : {};
 
-	User.find(condition)
+
+//Find a single Tutorial with its email
+
+exports.findOne = (req,res) => {
+	const email = req.params.email;
+		User.findOne({email:email})
 		.then(data => {
-			res.send(data);
+			if(!data)
+				res.status(404).send({ message : `tutoriel avec l'email introuvable`})
+			else res.send(data);
 		})
 		.catch(err => {
 			res.status(500).send({
@@ -48,25 +85,52 @@ exports.findAll = (req,res) => {
 				err.message ||  "une erreur s'est produite durant le processus de capture du Tutoriel"
 			});
 		});
-
 };
 
-//Find a single User with its id
-exports.findOne = (req,res) => {
-	const id = req.params.id;
-	User.findById(id)
-		.then(data => {
-			if(!data)
-				res.status(404).send({ message : `tutoriel avec l'id ${id} introuvable`})
-			else res.send(data);
+
+//auth an user
+exports.auth =(req,res)=> {
+	User.find({email: req.body.email })
+		.exec()
+		.then( user =>{
+			if (user.length<1){
+				return res.status(401).json({
+					message: 'AUTH FAILED!'
+				});
+			}
+			bcrypt.compare(req.body.password, user[0].password,(err, result) =>{
+				if(err){
+					return res.status(401).json({
+					message: 'AUTH FAILED!'})
+				} else if (result){
+					const tocken = jwt.sign({
+						email: user[0].email,
+						id: user[0].id
+					},
+					JWT_KEY.key,
+					{
+						expiresIn:"1h"
+					}
+					);
+					return res.status(200).json({
+					message: 'AUTH SUCCESSFUL !',
+					tocken: tocken
+					});
+				} else {
+					return res.status(401).json({
+					message: 'AUTH FAILED!'});
+				}
+			});
 		})
-		.catch( err =>{
-			err
-				.status(500)
-				.send({ message: `une erreur s'est produite lors du chargement dtutoriel avec l'id ${id}`});
-			
+		.catch(err =>{
+			console.log(err);
+			res.status(500).json({
+				error : err
+			});
 		});
-};
+}
+
+
 
 //Update a User with the specified id in the request
 exports.update = (req,res) => {

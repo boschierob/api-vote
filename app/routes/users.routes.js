@@ -7,11 +7,12 @@ module.exports = app => {
 	//Create new users
 	router.post('/', users.create);
 
-	// Retrieve all User
-	router.get('/', users.findAll);
+	//Sign in user
+	router.post('/signin', users.auth);
+
 
 	// Retrieve a single User with id
-	router.get('/:id', users.findOne);
+	router.get('/:email', users.findOne);
 
 	// Update a User with id
 	router.put('/:id', users.update);
@@ -23,5 +24,4 @@ module.exports = app => {
 	 router.delete('/', users.deleteAll);
 
 	 app.use('/api/users', router);
-
 }

@@ -14,8 +14,13 @@ module.exports = app => {
 	// Retrieve a single User with id
 	router.get('/:email', users.findOne);
 
+	
+	//Push a occasion in  User with id
+	router.put('/PushOccasion/:userId/:occasionId', users.userPushOccasion);
+
 	// Update a User with id
 	router.put('/:id', users.update);
+
 
 	 // Delete a User with id
 	 router.delete('/:id', users.delete);

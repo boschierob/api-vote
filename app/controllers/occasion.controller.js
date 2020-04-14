@@ -2,6 +2,7 @@
 const db = require('../models');
 const Occasion = db.occasions;
 
+
 //Create and Save new Occasion
 exports.create = (req, res) => {
   // Validate request
@@ -14,6 +15,7 @@ exports.create = (req, res) => {
   const occasion = new Occasion({
     title: req.body.title,
     initiator: req.body.initiator,
+    userId: req.body.userId,
     description: req.body.description,
     date: req.body.date,
     limit_date:req.body.limit_date
@@ -30,7 +32,7 @@ exports.create = (req, res) => {
         message:
           err.message || "Some error occurred while creating the Occasion."
       });
-    });
+});
 };
 //Retrieve all Tutorials
 exports.findAll = (req,res) => {
@@ -50,6 +52,7 @@ exports.findAll = (req,res) => {
 
 };
 
+
 //Find a single Occasion with its id
 exports.findOne = (req,res) => {
 	const id = req.params.id;
@@ -59,11 +62,28 @@ exports.findOne = (req,res) => {
 				res.status(404).send({ message : `tutoriel avec l'id ${id} introuvable`})
 			else res.send(data);
 		})
-		.catch( err =>{
-			err
-				.status(500)
-				.send({ message: `une erreur s'est produite lors du chargement dtutoriel avec l'id ${id}`});
-			
+		.catch(err => {
+			res.status(500).send({
+				message : 
+				err.message ||  "une erreur s'est produite durant le processus de capture du Tutoriel"
+			});
+		});
+};
+
+//Find a single Occasion with initiator's email
+exports.findByInitiator = (req,res) => {
+	const email = req.params.email;
+	Occasion.find({"initiator":email})
+		.then(data => {
+			if(!data)
+				res.status(404).send({ message : ` evenement introuvable`})
+			else res.send(data);
+		})
+		.catch(err => {
+			res.status(500).send({
+				message : 
+				err.message ||  "une erreur s'est produite durant le processus de capture du Tutoriel"
+			});
 		});
 };
 
@@ -100,7 +120,7 @@ exports.update = (req,res) => {
 exports.delete = (req,res) => {
 	const id = req.params.id;
 
-	Occasion.findByIdAndRemove(id)
+	Occasion.findByIdAndRemove(id, { useFindAndModify: false })
 		.then(data => {
 			if (!data) {
 				res.status(404).send({

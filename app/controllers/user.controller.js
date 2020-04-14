@@ -128,7 +128,7 @@ exports.auth =(req,res)=> {
 				error : err
 			});
 		});
-}
+};
 
 
 
@@ -159,7 +159,24 @@ exports.update = (req,res) => {
 			});
 		});
 };
+	
+exports.userPushOccasion =  (req,res) => {
+	console.log(req.params);
+	User.findByIdAndUpdate({_id: req.params.userId},
+		{ $push: { occasions: req.params.occasionId}},{ new: true, useFindAndModify: false })
+	.then(data =>{
+		res.send({
+			message: `occasion added inside this user's occasions array`
+		});
+	})
+	.catch(err => {
+			res.status(500).send({
+				message: `une erreur s'est produite`
+			});
+		});
 		
+	
+};	
 
 //Delete a User with a specified idin the request
 exports.delete = (req,res) => {

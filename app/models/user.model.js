@@ -16,8 +16,15 @@ module.exports = mongoose => {
                         message: props => `${props.value} is incorrect email!`
                       },
             },
-      password: {type: String, required : true, unique: true}
+      password: {type: String, required : true, unique: true},
+      occasions: [
+        {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Occasion"
+        }
+      ]
     },
+    
     { timestamps: true }
   );
 

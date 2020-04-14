@@ -1,0 +1,900 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"limit_date"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"b",
+				"bcrypt"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"onchange",
+				"onChangeTitle"
+			],
+			[
+				"dat",
+				"date_event"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"cls",
+				"className"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"u",
+				"username"
+			],
+			[
+				"R",
+				"RepoItem"
+			],
+			[
+				"getUser",
+				"getUserRepos"
+			],
+			[
+				"state",
+				"setState"
+			],
+			[
+				"prop",
+				"PropTypes"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"t",
+				"table\tTag"
+			],
+			[
+				"info",
+				"infosyndic"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"f",
+				"inline-flex\tdisplay"
+			],
+			[
+				"paddi",
+				"padding-top\tproperty"
+			],
+			[
+				"form",
+				"formconnexion"
+			],
+			[
+				"backg",
+				"background\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"ba",
+				"background\tproperty"
+			],
+			[
+				"bott",
+				"margin-bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"n",
+				"nom"
+			],
+			[
+				"new",
+				"newpseudo"
+			],
+			[
+				"NEW",
+				"newpseudo"
+			],
+			[
+				"req",
+				"requser"
+			],
+			[
+				"re",
+				"requser"
+			],
+			[
+				"mail",
+				"mailconnect"
+			],
+			[
+				"filter",
+				"filter_var"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"db_nam",
+				"mysql_db_name"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"PASS",
+				"password"
+			],
+			[
+				"per",
+				"personalGreeting"
+			],
+			[
+				"remember",
+				"rememberDiv"
+			],
+			[
+				"personn",
+				"personalGreeting"
+			],
+			[
+				"name",
+				"nameDisplayCheck"
+			],
+			[
+				"pro",
+				"prompt"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"nouveau",
+				"nouveauContact"
+			],
+			[
+				"aff",
+				"affiche"
+			],
+			[
+				"cont",
+				"contact"
+			],
+			[
+				"afficher",
+				"afficherListe"
+			],
+			[
+				"mys",
+				"mysql_query"
+			],
+			[
+				"com",
+				"commentaires"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"background",
+				"background-image\tproperty"
+			],
+			[
+				"V",
+				"VolumeCone"
+			],
+			[
+				"vo",
+				"VolumeCone"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"a",
+				"auto\tfont-kerning"
+			],
+			[
+				"spa",
+				"space-around\tjustify-content"
+			],
+			[
+				"backgr",
+				"background-image\tproperty"
+			],
+			[
+				"l",
+				"list-style-image\tproperty"
+			],
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"backgound-c",
+				"background-color\tproperty"
+			],
+			[
+				"pa",
+				"padding-left\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"bord",
+				"border-bottom\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"sp",
+				"space-between\tjustify-content"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"i",
+				"images"
+			],
+			[
+				"hea",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/brunoboschiero/vote-april-front/src/components/board.component.js",
+			"settings":
+			{
+				"buffer_size": 3733,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brunoboschiero/vote-april-front/src/components/OccasionEdit.component.js",
+			"settings":
+			{
+				"buffer_size": 861,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nmodule.exports = app => {\n\t\n\tconst occasions = require('../controllers/occasion.controller.js');\n\tconst router = require(\"express\").Router();\n\n\t//Create new occasion\n\trouter.post('/', occasions.create);\n\n\t// Retrieve all Occasions\n\trouter.get('/', occasions.findAll);\n\n\t// Retrieve a single Occasion with id\n\t//router.get('/:id', occasions.findOne);\n\n\t// Retrieve a single Occasion with email of the initiator\n\trouter.get('/:email', occasions.findByInitiator);\n\n\t// Update a Occasion with id\n\trouter.put('/:id', occasions.update);\n\n\t // Delete a Tutorial with id\n\t router.delete('/:id', occasions.delete);\n\n\t // Delete all Tutorials\n\t router.delete('/', occasions.deleteAll);\n\n\t app.use('/api/occasions', router);\n\n}",
+			"file": "app/routes/occasions.routes.js",
+			"file_size": 715,
+			"file_write_time": 132311816570000000,
+			"settings":
+			{
+				"buffer_size": 717,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/occasion.controller.js",
+			"settings":
+			{
+				"buffer_size": 3549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 1121,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"pug",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"Package Control:  ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Changelog"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"PHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brunoboschiero/api-vote-app",
+		"/Users/brunoboschiero/api-vote-app/app",
+		"/Users/brunoboschiero/api-vote-app/app/controllers",
+		"/Users/brunoboschiero/api-vote-app/app/routes",
+		"/Users/brunoboschiero/vote-april-front",
+		"/Users/brunoboschiero/vote-april-front/src",
+		"/Users/brunoboschiero/vote-april-front/src/components",
+		"/Users/brunoboschiero/vote-april-front/src/services"
+	],
+	"file_history":
+	[
+		"/Users/brunoboschiero/api-vote-app/app/routes/oneoccasion.route.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/header.component.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/OccasionEdit.component.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/OccasionForm.component.js",
+		"/Users/brunoboschiero/vote-april-front/src/App.css",
+		"/Users/brunoboschiero/react-crud/src/components/tutorials-list.component.js",
+		"/Users/brunoboschiero/react-crud/src/services/tutorial.service.js",
+		"/Users/brunoboschiero/api-vote-app/app/controllers/occasion.controller.js",
+		"/Users/brunoboschiero/api-vote-app/app/routes/occasions.routes.js",
+		"/Users/brunoboschiero/vote-april-front/src/services/occasion.service.js",
+		"/Users/brunoboschiero/api-vote-app/app/controllers/user.controller.js",
+		"/Users/brunoboschiero/vote-april-front/src/services/user.service.js",
+		"/Users/brunoboschiero/api-vote-app/app/routes/users.routes.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/signin.component.js",
+		"/Users/brunoboschiero/react-crud/src/App.css",
+		"/Users/brunoboschiero/vote-april-front/src/components/board.component.js",
+		"/Users/brunoboschiero/api-vote-app/app/controllers/vote.controller.js",
+		"/Users/brunoboschiero/react-crud/src/components/tutorial.component.js",
+		"/Users/brunoboschiero/api_tuto/app/controllers/tutorial.controller.js",
+		"/Users/brunoboschiero/api-vote-app/app/models/user.model.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/home.component.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/signup.component.js",
+		"/Users/brunoboschiero/api-vote-app/app/routes/auth.routes.js",
+		"/Users/brunoboschiero/react-crud/src/index.js",
+		"/Users/brunoboschiero/mars2020/redux_example.js",
+		"/Users/brunoboschiero/api-vote-app/app/config/env.config.js",
+		"/Users/brunoboschiero/api-vote-app/app/middleware/check-auth.js",
+		"/Users/brunoboschiero/api-vote-app/app/.env",
+		"/Users/brunoboschiero/api-vote-app/server.js",
+		"/Users/brunoboschiero/api-vote-app/app/models/auth.model.js",
+		"/Users/brunoboschiero/api-vote-app/.env",
+		"/Users/brunoboschiero/vote-april-front/src/services/tutorial.service.js",
+		"/Users/brunoboschiero/api-vote-app/app/models/index.js",
+		"/Users/brunoboschiero/vote-april-front/src/App.js",
+		"/Users/brunoboschiero/vote-april-front/src/index.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/tutorial.component.js",
+		"/Users/brunoboschiero/react-crud/src/App.js",
+		"/Users/brunoboschiero/vote-april-front/src/components/footer.component.js",
+		"/Users/brunoboschiero/vote-april-front/src/http-common.js",
+		"/Users/brunoboschiero/react-crud/src/http-common.js",
+		"/Users/brunoboschiero/api-vote-app/loader.html",
+		"/Users/brunoboschiero/api-vote-app/loader-styles.css",
+		"/Users/brunoboschiero/vote-april-front/src/components/layout.component.js",
+		"/Users/brunoboschiero/api-vote-app/app/models/vote.model.js",
+		"/Users/brunoboschiero/api-vote-app/app/controllers/result.controller.js",
+		"/Users/brunoboschiero/api-vote-app/app/models/result.model.js",
+		"/Users/brunoboschiero/api-vote-app/app/routes/votes.routes.js",
+		"/Users/brunoboschiero/api-vote-app/app/routes/rsults.routes.js",
+		"/Users/brunoboschiero/api-vote-app/package.json",
+		"/Users/brunoboschiero/api_tuto/server.js",
+		"/Users/brunoboschiero/api-vote-app/view.html",
+		"/Users/brunoboschiero/api-vote-app/app/routes/routes.js",
+		"/Users/brunoboschiero/api-vote-app/app/models/occasion.model.js",
+		"/Users/brunoboschiero/api_tuto/app/models/index.js",
+		"/Users/brunoboschiero/api_tuto/app/models/tutorial.model.js",
+		"/Users/brunoboschiero/api-vote-app/app/config/db.config.js",
+		"/Users/brunoboschiero/whatabyte-portal/index.js",
+		"/Users/brunoboschiero/whatabyte-portal/.env",
+		"/Users/brunoboschiero/whatabyte-portal/.gitignore",
+		"/Users/brunoboschiero/whatabyte-portal/package.json",
+		"/Users/brunoboschiero/whatabyte-portal/views/layout.pug",
+		"/Users/brunoboschiero/whatabyte-portal/public/style.css",
+		"/Users/brunoboschiero/whatabyte-portal/views/login.pug",
+		"/Users/brunoboschiero/whatabyte-portal/views/index.pug",
+		"/Users/brunoboschiero/whatabyte-portal/views/user.pug",
+		"/Users/brunoboschiero/whatabyte-portal/auth.js",
+		"/Users/brunoboschiero/express-ads-api/src/index.js",
+		"/Users/brunoboschiero/express-ads-api/src/database/ads.js",
+		"/Users/brunoboschiero/express-ads-api/src/database/mongo.js",
+		"/Users/brunoboschiero/api_tuto/app/config/db.config.js",
+		"/Users/brunoboschiero/mars2020/script2.js",
+		"/Users/brunoboschiero/mars2020/exemple.html",
+		"/Users/brunoboschiero/react-crud/src/components/add-tutorial.component.js",
+		"/Users/brunoboschiero/react-crud/src/logo-iVote.svg",
+		"/Users/brunoboschiero/react-crud/.env",
+		"/Users/brunoboschiero/api_tuto/app/routes/tutorials.routes.js",
+		"/Users/brunoboschiero/react-crud/public/index.html",
+		"/Users/brunoboschiero/api_tuto/app/models/tutorials.model.js",
+		"/Users/brunoboschiero/api_tuto/config/db.config.js",
+		"/Users/brunoboschiero/api_tuto/models/index.js",
+		"/Users/brunoboschiero/api_tuto/models/tutorial.model.js",
+		"/Users/brunoboschiero/ivote-app/src/components/voter_edit.js",
+		"/Users/brunoboschiero/backend/voter.model.js",
+		"/Users/brunoboschiero/ivote-app/src/App.js",
+		"/Users/brunoboschiero/backend/event.model.js",
+		"/Users/brunoboschiero/backend/server.js",
+		"/Users/brunoboschiero/backend/vote.model.js",
+		"/Users/brunoboschiero/ivote-app/src/components/pool.component.js",
+		"/Users/brunoboschiero/ivote-app/src/components/create.component.js",
+		"/Users/brunoboschiero/index.js",
+		"/Users/brunoboschiero/ivote-app/src/components/edit.component.js",
+		"/Users/brunoboschiero/ivote-app/src/components/delete.component.js",
+		"/Users/brunoboschiero/ivote-app/src/components/display.component.js",
+		"/Users/brunoboschiero/signup-app/package.json",
+		"/Users/brunoboschiero/signup-app/index.js",
+		"/Users/brunoboschiero/signup-app/index.html",
+		"/Users/brunoboschiero/signup-app/style.css",
+		"/Users/brunoboschiero/signup-app/signup_success.html",
+		"/Users/brunoboschiero/backend2/server.js",
+		"/Users/brunoboschiero/backend2/config/db.js",
+		"/Users/brunoboschiero/backend/config/db.js",
+		"/Users/brunoboschiero/ivote-app/src/create.component.js",
+		"/Users/brunoboschiero/backend/config/default.json",
+		"/Users/brunoboschiero/ivote-app/src/App.css",
+		"/Users/brunoboschiero/ivote-app/README.md",
+		"/Users/brunoboschiero/ivote-app/src/login.components.js",
+		"/Users/brunoboschiero/ivote-app/src/signup.component.js",
+		"/Users/brunoboschiero/ivote-app/src/components/home.component.js",
+		"/Users/brunoboschiero/ivote-app/src/pool.component.js",
+		"/Users/brunoboschiero/ivote-app/src/components/dashboard.component.js",
+		"/Users/brunoboschiero/ivote-app/src/edit.component.js",
+		"/Users/brunoboschiero/ivote-app/src/components/login.component.js",
+		"/Users/brunoboschiero/tutorial-part-four/src/pages/index.js",
+		"/Users/brunoboschiero/tutorial-part-four/gatsby-config.js",
+		"/Users/brunoboschiero/tutorial-part-four/src/templates/blog-post.js",
+		"/Users/brunoboschiero/tutorial-part-four/gatsby-node.js",
+		"/Users/brunoboschiero/tutorial-part-four/src/pages/paradi-panda.md",
+		"/Users/brunoboschiero/tutorial-part-four/src/pages/sweet-pandas-eating-sweets.md",
+		"/Users/brunoboschiero/tutorial-part-four/src/pages/pandas-and-bananas.md",
+		"/Users/brunoboschiero/tutorial-part-four/src/pages/my-files.js",
+		"/Users/brunoboschiero/tutorial-part-four/src/components/layout.js",
+		"/Users/brunoboschiero/tutorial-part-four/src/pages/about.js",
+		"/Users/brunoboschiero/tutorial-part-four/src/utils/typography.js",
+		"/Users/brunoboschiero/tutorial-part-three/src/components/layout.js",
+		"/Users/brunoboschiero/tutorial-part-three/src/pages/index.js",
+		"/Users/brunoboschiero/tutorial-part-three/src/pages/about.js",
+		"/Users/brunoboschiero/tutorial-part-three/src/pages/contact.js",
+		"/Users/brunoboschiero/tutorial-part-three/src/components/header.js"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"adress",
+			":{\n",
+			"include",
+			"$pdf",
+			"global",
+			"entete_table",
+			"Error",
+			"$titre",
+			"encode",
+			"facturePDF",
+			"5",
+			"addcols",
+			"$colonnes",
+			"$tab",
+			"format",
+			"CLIENT",
+			"DESIGNATION",
+			"px_unit",
+			"$prod",
+			"$line",
+			"prod",
+			"log",
+			"logout",
+			"tab",
+			"DATE",
+			"ln()",
+			"helveticab",
+			"helveticab.php",
+			"connec_copro"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/brunoboschiero/vote-april-front/src/components/board.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1772,
+								1747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/brunoboschiero/vote-april-front/src/components/OccasionEdit.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								774,
+								799
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/routes/occasions.routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/occasion.controller.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 547.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1036,
+								1036
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "forapp.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

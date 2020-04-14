@@ -11,7 +11,10 @@ module.exports = app => {
 	router.get('/', occasions.findAll);
 
 	// Retrieve a single Occasion with id
-	router.get('/:id', occasions.findOne);
+	router.get('/one/:id', occasions.findOne);
+
+	// Retrieve a single Occasion with email of the initiator
+	router.get('/:email', occasions.findByInitiator);
 
 	// Update a Occasion with id
 	router.put('/:id', occasions.update);

@@ -58,7 +58,7 @@ exports.votePushOptions =  (req,res) => {
 	console.log(req.body.question);
 	console.log(req.body.options)
 	Vote.findByIdAndUpdate({_id: req.params.id},
-		{ $set: { 
+		{ $push: { 
 			questions: req.body}},{ new: true, useFindAndModify: false })
 	.then(data =>{
 		res.send({

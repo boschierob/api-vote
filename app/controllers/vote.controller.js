@@ -2,20 +2,23 @@
 const db = require('../models');
 const Vote = db.votes;
 
+
 //Create and Save new Vote
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.question) {
+  if (!req.body.title) {
     res.status(400).send({ message: "Content can not be empty!" });
     return;
   }
 
   // Create a Vote
   const vote = new Vote({
-    question: req.body.question,
-      options:req.body.options,
+  	title:req.body.title,
+  	questions:req.body.questions,
+   // question: req.body.question,
       voters: req.body.voters,
-      limit_date: req.body.limit_date
+      limit_date: req.body.limit_date,
+      occasion: req.body.occasion
   });
 
   // Save Vote in the database
@@ -31,12 +34,49 @@ exports.create = (req, res) => {
       });
     });
 };
+
+exports.votePushQuestion =  (req,res) => {
+	//console.log(req.params);
+	console.log(`la quest: ${req.body.question}`);
+	const question=req.body.question;
+	Vote.findByIdAndUpdate({_id: req.params.voteId},
+		{ $push: { questions: {question:question}}},{ new: true, useFindAndModify: false })
+	.then(data =>{
+		res.send({
+			message: `question added inside this votes' questions array`
+		});
+	})
+	.catch(err => {
+			res.status(500).send({
+				message: `une erreur s'est produite`
+			});
+	});
+};	
+
+exports.votePushOptions =  (req,res) => {
+	console.log(req.params);
+	console.log(req.body.question);
+	console.log(req.body.options)
+	Vote.findByIdAndUpdate({_id: req.params.id},
+		{ $set: { 
+			questions: req.body}},{ new: true, useFindAndModify: false })
+	.then(data =>{
+		res.send({
+			message: `good`
+		});
+	})
+	.catch(err => {
+			res.status(500).send({
+				message: `une erreur s'est produite`
+			});
+	});
+};	
 //Retrieve all Tutorials
 exports.findAll = (req,res) => {
-	const question = req.query.question;
-	var condition = question ? { question: {$regex: new RegExp(question), $options:"i"}} : {};
+	//const vote = req.query.vote.title;
+	//var condition = vote ? { vote: {$regex: new RegExp(vote), $options:"i"}} : {};
 
-	Vote.find(condition)
+	Vote.find()
 		.then(data => {
 			res.send(data);
 		})
@@ -50,9 +90,9 @@ exports.findAll = (req,res) => {
 };
 
 //Find a single Vote with its id
-exports.findOne = (req,res) => {
+exports.findByOccasionId = (req,res) => {
 	const id = req.params.id;
-	Vote.findById(id)
+	Vote.find({occasion:id})
 		.then(data => {
 			if(!data)
 				res.status(404).send({ message : `tutoriel avec l'id ${id} introuvable`})
@@ -94,6 +134,24 @@ exports.update = (req,res) => {
 		});
 };
 		
+exports.getQuestionById = (req,res) =>{
+	Vote.find({_id:req.params.voteId})
+		.then(data => {
+			if(!data) {
+				res.status(404).send({
+					message: `Impossible `
+				});
+			} else 
+				res.send({
+					message :`succes`
+				});
+			})
+		.catch(err => {
+			res.status(500).send({
+				message: `une erreur s'est produite`
+			});
+		});
+}
 
 //Delete a Vote with a specified idin the request
 exports.delete = (req,res) => {

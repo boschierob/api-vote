@@ -2,9 +2,6 @@
 	"folders":
 	[
 		{
-			"path": "/Users/brunoboschiero/ivote-app"
-		},
-		{
 			"path": "/Users/brunoboschiero/backend"
 		},
 		{
@@ -27,6 +24,9 @@
 		},
 		{
 			"path": "/Users/brunoboschiero/vote-april-front"
+		},
+		{
+			"path": "/Users/brunoboschiero/nested-form-app"
 		}
 	]
 }

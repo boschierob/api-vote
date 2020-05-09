@@ -1,4 +1,4 @@
-module.exports = mongoose => {
+ module.exports = mongoose => {
   var schema = mongoose.Schema(
     {	
       title: String,

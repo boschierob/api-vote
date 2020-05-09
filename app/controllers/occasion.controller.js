@@ -1,4 +1,4 @@
-
+  
 const db = require('../models');
 const Occasion = db.occasions;
 
